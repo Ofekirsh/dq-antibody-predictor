@@ -1,4 +1,4 @@
-# DQ Antibody Predictor - Predicting Donor-Specific Antibody Emergence After Transplantation
+# DQ Antibody Predictor
 
 This project predicts the emergence of donor-specific antibodies (DSAs) that drive organ rejection by analyzing mismatches between patient and donor HLA-DQ proteins.
 Unlike traditional approaches that rely solely on allele or eplet counts, our method combines eplet data with biological and genetic distances to achieve high predictive performance (AUC = 0.84).
@@ -20,12 +20,12 @@ If you have suitable training data, use the `train_pipeline.py` script to train 
 
 ### Input Format
 
-Your training data should follow the same structure as shown in [`data/example_train_dataset`](data/example_train_dataset). This includes donor-patient allele information required for feature extraction.
+Your training data should follow the same structure as shown in [`example_train_dataset`](data/example_train_dataset.csv). This includes donor-patient allele information required for feature extraction.
 
 ### Configuration
 
 - Config file: [`configs/train_pipeline_config.yml`](configs/train_pipeline_config.yml)
-- Parameters explained: [`configs/readme.md`](configs/readme.md)
+- Parameters explained: [`configs/README.md`](configs/README.md)
 
 ### Run the Pipeline
 
@@ -55,13 +55,13 @@ To run predictions on new patient-donor samples, use the `inference_pipeline.py`
 
 ### Input Format
 
-Prepare your test dataset in the same format as [`data/example_inference_sample`](data/example_inference_sample).
-You can use any path, but make sure to update the `data/test_file` field in your config file accordingly.
+Prepare your test dataset in the same format as [`example_inference_sample`](data/example_inference_sample.csv).
+You can use any path, but make sure to update the `data/test_file` field in the config file accordingly.
 
 ### Configuration
 
 - Config file: [`configs/inference_pipeline_config.yml`](configs/inference_pipeline_config.yml)
-- Parameters explained: [`configs/readme.md`](configs/readme.md)
+- Parameters explained: [`configs/README.md`](configs/README.md)
 
 ### Run the Pipeline
 

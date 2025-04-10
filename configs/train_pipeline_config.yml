@@ -2,7 +2,7 @@
 
 # Input data configuration
 data:
-  input_file: "../data/dq_data_13_9_24.xlsx"
+  input_file: "../data/example_train_dataset.csv"
 
 # Feature extraction configuration
 features:
@@ -27,7 +27,7 @@ model:
   type: "logreg"  # Options: "lgbm", "xgb", "logreg"
   k_folds: 5
   save: true
-  path: "../output/models_saved/latest_model.pkl"
+  path: "../output/models_saved/model.pkl"
 
 # Evaluation configuration
 evaluation:

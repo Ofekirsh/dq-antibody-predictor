@@ -2,7 +2,7 @@
 
 # Input data configuration
 data:
-  test_file: "../data/real_data2.csv"  # or .xlsx
+  test_file: "../data/example_inference_samples.csv"
 
 # Feature extraction configuration
 features:
@@ -24,7 +24,7 @@ features:
 
 # Model configuration
 model:
-  path: "../output/models_saved/latest_model.pkl"
+  path: "../output/models_saved/model.pkl"
 
 # Output configuration
 output:
