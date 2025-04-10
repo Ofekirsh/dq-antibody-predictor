@@ -1,0 +1,35 @@
+# Configuration for Inference Pipeline
+
+# Input data configuration
+data:
+  test_file: "../data/real_data2.csv"  # or .xlsx
+
+# Feature extraction configuration
+features:
+  eplet:
+    dqa_to_sequence_file: "../data/jsons/dqa_to_seq.json"
+    dqb_to_sequence_file: "../data/jsons/dqb_to_seq.json"
+    allele_descriptions_file: "../data/jsons/all_eplets.json"
+    output_file: "../output/features/eplet_features.csv"
+
+  biological:
+    ems_distances_file: "../data/jsons/ems_distances.json"
+    pam_distances_file: "../data/jsons/pam_distances.json"
+    g12_values_file: "../data/jsons/g12_classifications.json"
+    features_to_extract: [ "PAM", "EMS", "G12" ]
+    output_file: "../output/features/biological_features.csv"
+
+  combined:
+    output_file: "../output/features/combined_features.csv"
+
+# Model configuration
+model:
+  path: "../output/models_saved/latest_model.pkl"
+
+# Output configuration
+output:
+  predictions_file: "../output/predictions/predictions.csv"
+
+# Evaluation configuration
+evaluation:
+  roc_plot_path: "../output/plots/inference_roc_curve.png"

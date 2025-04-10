@@ -1,0 +1,22 @@
+# Core Dependencies
+numpy>=1.24.3
+pandas>=1.5.3
+scikit-learn>=1.2.2
+scipy>=1.10.1
+
+# Feature Engineering & Data Handling
+openpyxl>=3.1.2  # For handling Excel files
+
+# Machine Learning Models
+lightgbm>=3.3.5  # LGBM model
+xgboost>=1.7.6  # XGBoost model
+statsmodels>=0.13.5  # For Logistic Regression evaluation
+
+# Utility Libraries
+matplotlib>=3.7.1  # For visualization
+seaborn>=0.12.2  # Advanced statistical plots
+joblib>=1.2.0  # Save/load models efficiently
+
+# Testing & Debugging
+pytest>=7.2.2  # For unit testing
+PyYAML>=6.0.2
