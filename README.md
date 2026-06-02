@@ -77,9 +77,21 @@ Results are saved in the `output/` directory:
 - `output/missing_keys/` – Lists of skipped samples due to missing data (e.g., `missing_pam_keys.csv`)
 - `output/plots/inference_roc_curve.png` – ROC curve and AUC of inference performance
 
-### Pretrained Model
+### Using the Pretrained Model
 
-- The pre-trained model is available at: `output/models_saved/model.pkl`
+A pretrained model is included at `trained_model/model.pkl`.
 
+To run inference with it, update the model path in the configuration file (`configs/inference_pipeline_config.yml`):
+
+```yaml
+model:
+  path: "trained_model/model.pkl"
+```
+
+Then run the inference pipeline:
+
+```bash
+python pipelines/inference_pipeline.py --config configs/inference_pipeline_config.yml
+```
 ---
 

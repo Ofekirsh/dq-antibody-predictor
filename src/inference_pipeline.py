@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 
 # Feature extraction imports
-from utils.data.xlsx_to_dataframe import load_xlsx_to_dataframe
 from src.feature_sets.one_hot_eplet import OneHotEpletFeature
 from src.feature_sets.biological import BiologicalFeature
 from src.feature_sets.bio_eplet import BioEpletFeature
